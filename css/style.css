@@ -9,6 +9,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    margin: 0;
+}
+
 .Container{
     width: 980px;
     margin: auto;
@@ -26,6 +30,8 @@ h1{
     background-image: url("../img/pattern.png");
     background-size: contain;
     
+    position: relative;
+
     display: inline-block;
 }
 
@@ -36,14 +42,6 @@ footer{
 
 .Card:hover{
     cursor: pointer;
-}
-
-#Mongolfiera{
-    background-image: url("../img/noun_air_balloon_3134741.png");
-}
-
-#Trattore:hover{
-    background-image: url("../img/noun_Tractor_3134797.png");
 }
 
 .Bicicletta:hover{
@@ -62,6 +60,49 @@ footer{
     background-image: url("../img/noun_Submarine_3134738.png");
 }
 
+#Mongolfiera{
+    background-image: url("../img/noun_air_balloon_3134741.png");
+    max-height: 80%;
+}
+
+#Trattore:hover{
+    background-image: url("../img/noun_Tractor_3134797.png");
+}
+
 .Testo{
-    z-index: -1;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+
+    display: none;
+}
+
+.Bicicletta:hover .Testo, .Nave:hover .Testo, .Tram:hover .Testo, .Sottomarino:hover .Testo, #Trattore:hover .Testo{
+    display: block;
+}
+
+.Bicicletta{
+    color: #79b15c;
+}
+
+.Nave{
+    color: #4994b7;
+}
+
+.Sottomarino{
+    color: #654294;
+}
+
+#Mongolfiera{
+    color: #e61986;
+}
+
+#Trattore{
+    color: #e67919;
+}
+
+#Mongolfiera > h2{
+    display: block;
 }
