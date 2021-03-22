@@ -14,18 +14,54 @@ h1{
     margin: auto;
 }
 
-.Test{
+.Card{
     width: 200px;
     height: 200px;
-    background-color: blue;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 6%;
 
     margin-right: 15px;
     margin-bottom: 10px;
+
+    background-image: url("../img/pattern.png");
+    background-size: contain;
     
     display: inline-block;
 }
 
 footer{
     text-align: center;
+    font-size: 22px;
+}
+
+.Card:hover{
+    cursor: pointer;
+}
+
+#Mongolfiera{
+    background-image: url("../img/noun_air_balloon_3134741.png");
+}
+
+#Trattore:hover{
+    background-image: url("../img/noun_Tractor_3134797.png");
+}
+
+.Bicicletta:hover{
+    background-image: url("../img/noun_Bicycle_3134821.png");
+}
+
+.Nave:hover{
+    background-image: url("../img/noun_Cruise_Ship_3134824.png");
+}
+
+.Tram:hover{
+    background-image: url("../img/noun_Tram_3134750.png");
+}
+
+.Sottomarino:hover{
+    background-image: url("../img/noun_Submarine_3134738.png");
+}
+
+.Testo{
+    z-index: -1;
 }
